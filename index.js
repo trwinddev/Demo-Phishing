@@ -22,7 +22,7 @@ connection.connect((err) => {
 app.post("/users", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
-  const sql = `INSERT INTO user (username, password) VALUES ('${username}', '${password}')`;
+  const sql = `INSERT INTO bank (username, password) VALUES ('${username}', '${password}')`;
   connection.query(sql, (err, result) => {
     if (err) throw err;
     console.log("User inserted");
